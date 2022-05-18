@@ -1,0 +1,76 @@
+<body>
+  <mat-toolbar color="ascent">
+    <button matTooltip="More" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+   <mat-icon>more_vert</mat-icon>
+ </button>
+ 
+ <mat-menu #menu="matMenu">
+   <button mat-menu-item>
+     <mat-icon>favorite</mat-icon>
+     <span>Favorite Songs</span>
+   </button>
+   <button mat-menu-item>
+     <mat-icon>playlist_play</mat-icon>
+     <span>My Playlist</span>
+   </button>
+   <button mat-menu-item>
+     <mat-icon>settings</mat-icon>
+     <span>Settings</span>
+   </button>
+ </mat-menu>
+ 
+   <span>Music Player</span>
+   <span class="spacer"></span>
+   <mat-icon>search</mat-icon>
+   <mat-form-field class="input" appearance="fill">
+    <input matInput  value="Search">
+  </mat-form-field>
+   <button matTooltip="Add to favorites" mat-icon-button>
+     <mat-icon>favorite</mat-icon>
+   </button>
+   <button matTooltip="Share" mat-icon-button>
+    <mat-icon>share</mat-icon>
+  </button>
+ </mat-toolbar>
+ 
+ <div class="card">
+ <mat-card class="example-card">
+   <mat-card-header>
+     <div mat-card-avatar class="header-image"></div>
+     <mat-card-title>Faded</mat-card-title>
+     <mat-card-subtitle>Artist: Alan Walker</mat-card-subtitle>
+   </mat-card-header>
+   <img mat-card-image src="https://ih1.redbubble.net/image.825576164.3745/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u4.jpg">
+   <mat-card-content>
+     <p>
+       Singer: Iselin Løken Solheim<br>
+       Album: Different World <br>
+       Lyricist: Alan Walker<br>
+       Music: Alan Walker<br>
+       Language: English
+     </p>
+     <mat-progress-bar mode="determinate" value="40" color="warn"></mat-progress-bar>
+     <p>
+       1:43
+     </p>
+   </mat-card-content>
+   <mat-card-actions class="buttons">
+     <button mat-button matTooltip="Previous Song">
+       <mat-icon>skip_previous</mat-icon>
+     </button>
+     <button mat-button matTooltip="Play Song ">
+       <mat-icon>play_circle</mat-icon>
+     </button>
+     <button mat-button matTooltip="Stop Song">
+       <mat-icon>stop</mat-icon>
+     </button>
+     <button mat-button matTooltip="Next Song">
+       <mat-icon>skip_next</mat-icon>
+     </button>
+   </mat-card-actions>
+ </mat-card>
+ </div>
+</body>
+ 
+ 
+ 
